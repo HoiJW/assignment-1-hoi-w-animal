@@ -43,7 +43,7 @@
 
 .gallery{
     background-color: $second-color;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     
     
@@ -51,18 +51,19 @@
         justify-content: center;
         flex-direction: column;
         align-self: center;
-        margin-top: -5%;
+        margin-top: -2.5%;
 
     }
     
     h2{
-        font-size: 2.7rem;
+        font-size: 2.8rem;
         font-family: $second-Font;
         text-align: center;
         display: block;
         text-transform: uppercase;
         margin-bottom: 8%;
         color: $third-color;
+        font-weight: 400;
         span{
             display: block;
         }

@@ -1,5 +1,46 @@
 // mid menu section
 
+
+.mid-menu{
+    height: 38vh;
+    background-color: $third-color;
+    
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul{
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2%;
+    }
+    li{
+        height: 250px;
+        width: 250px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        color: $first-color;
+        text-decoration: none;
+        font-family:$first-Font ;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .icons{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+
 // blog section
 
 .blog {
