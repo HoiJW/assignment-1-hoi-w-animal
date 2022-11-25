@@ -418,21 +418,84 @@ nav ul a {
 }
 
 .blog {
-  margin-top: 5%;
+  margin: 0;
+  padding: 0;
+  max-height: 150vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.blog .wrapper {
-  height: 100vh;
+.blog .blog-frame {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog .blog-frame .blog-text-contanier {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+.blog .blog-frame .blog-text-contanier .text-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 5%;
 }
-.blog .blog-text-contanier {
-  height: 400px;
-  width: 400px;
+.blog .blog-frame .blog-text-contanier .text-layout h3 {
+  color: #152D20;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.blog .blog-frame .blog-text-contanier .text-layout p {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #FCFCFC;
+  line-height: 29px;
+}
+.blog .blog-frame .blog-text-contanier .text-layout button {
+  width: 10%;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  line-height: 29px;
+  border: 1px solid #152D20;
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1.5%;
+  width: 40%;
+  background-color: #152D20;
+  color: #FCFCFC;
 }
 .blog .blog-image-contanier {
-  height: 400px;
-  width: 400px;
+  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.blog .blog-image-contanier img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
 }
 
 .wrapper {
