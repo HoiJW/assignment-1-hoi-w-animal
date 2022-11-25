@@ -2,3 +2,20 @@
 
 // blog section
 
+.blog {
+    margin-top: 5%;
+    
+    .wrapper{
+        height: 100vh;
+        justify-content: center;
+    }
+    .blog-text-contanier{
+        height: 400px;
+        width: 400px;
+        
+    }
+    .blog-image-contanier{
+        height: 400px;
+        width: 400px;
+    }
+}

@@ -42,5 +42,40 @@
 // gallery section
 
 .gallery{
-background-color: $second-color ;
+    background-color: $second-color;
+    height: 100vh;
+    display: flex;
+    
+    
+    .wrapper{
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        margin-top: -5%;
+
+    }
+    
+    h2{
+        font-size: 2.7rem;
+        font-family: $second-Font;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 8%;
+        color: $third-color;
+        span{
+            display: block;
+        }
+        
+    }
+    
+    .animals-image{
+        display: flex;
+        width: 75vw;
+        justify-content: space-between;
+    }
+    
+    .image-container{
+        height: 450px;
+    }
 }
