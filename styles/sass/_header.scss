@@ -1,0 +1,47 @@
+
+header{
+    background-image: url(./image-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    .wrapper{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10vw
+    }
+}
+
+
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 6.6rem;
+    text-transform: uppercase;
+    max-width:60vw ;
+    text-align: right;
+    flex-basis: 48%;
+    color: $first-color;
+    font-weight: 400;
+}
+
+nav{
+    flex-basis: 48%;
+}
+
+nav ul{
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    
+    li{
+        list-style: none;
+        
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family:$first-Font;
+        font-size: 1.25rem;
+        color: $first-color;
+    }
+}

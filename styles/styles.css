@@ -226,10 +226,71 @@ html {
   overflow: hidden;
 }
 
+header {
+  background-image: url(./image-1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+header .wrapper {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10vw;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 6.6rem;
+  text-transform: uppercase;
+  max-width: 60vw;
+  text-align: right;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  color: #FCFCFC;
+  font-weight: 400;
+}
+
+nav {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  color: #FCFCFC;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+img {
+  height: 100%;
+  display: block;
+}
+
+html {
+  font-size: 125%;
 }
