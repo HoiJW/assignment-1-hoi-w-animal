@@ -22,3 +22,9 @@ img{
 html{
     font-size: 125%;
 }
+
+@media (max-width: 900px) {
+    .wrapper{
+        flex-wrap: wrap;
+    }
+}

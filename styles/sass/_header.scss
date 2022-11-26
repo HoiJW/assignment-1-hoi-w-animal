@@ -9,7 +9,9 @@ header{
         justify-content: space-between;
         padding: 0 10vw
     }
+    
 }
+
 
 
 
@@ -23,7 +25,7 @@ h1{
     color: $first-color;
     font-weight: 400;
 }
-
+// regular nav
 nav{
     flex-basis: 48%;
 }
@@ -43,5 +45,84 @@ nav ul{
         font-family:$first-Font;
         font-size: 1.25rem;
         color: $first-color;
+    }
+}
+
+// mobile nav
+
+
+.collapsible-menu {
+    color: $first-color;
+    position: fixed;
+    right: 5vw;
+    top: 5vh;
+    font-family: $first-Font;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: end;
+    z-index: 10;
+    
+    
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    
+}
+.collapsible-menu a {
+    display:block;
+    color: $first-color;
+    text-decoration: none;
+}
+
+.collapsible-menu label {
+    display: block;
+    cursor: pointer;
+    background: url(./bar.png) no-repeat left center;
+    background-size: 35%;
+    background-position: right;
+}
+input#menu {
+    display: none;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}/* Toggle Effect */input:checked ~ label {
+    background-image: url(./bar.png);
+}input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+
+// responsive 
+@media (max-width: 900px) {
+    .wrapper{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    h1{
+        position: absolute;
+        top: 0;
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    nav{
+        display: none;
+        
+    }
+
+    
+}
+
+@media (min-width: 900px){
+
+    .collapsible-menu{
+        display: none;
+        
+    
     }
 }

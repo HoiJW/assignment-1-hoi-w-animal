@@ -1,6 +1,7 @@
 // contact section
 .contact{
     background: $third-color;
+    min-height: 20vh;
     
     .wrapper{
         margin:0 auto;
@@ -86,6 +87,7 @@ footer{
     background-color: black;
     font-family: $third-Font;
     color: $first-color;
+    min-height: 10vh;
     .wrapper{
         justify-content: center;
     }
