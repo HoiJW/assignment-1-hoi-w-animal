@@ -498,6 +498,101 @@ nav ul a {
   height: 100%;
 }
 
+.contact {
+  background: #152D20;
+}
+.contact .wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 80vw;
+}
+.contact li {
+  list-style: none;
+}
+.contact a {
+  text-decoration: none;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
+}
+.contact form {
+  color: #FCFCFC;
+  text-align: center;
+}
+.contact form p {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.contact .input-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+}
+.contact .input-email input {
+  padding: 10px 30px;
+  width: 400px;
+}
+.contact .input-email button {
+  padding: 10px 30px;
+  background-color: black;
+  text-align: center;
+  color: #FCFCFC;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.contact .info {
+  color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Cormorant Garamond", serif;
+}
+.contact .info p {
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+.contact .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+footer {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: #FCFCFC;
+}
+footer .wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
