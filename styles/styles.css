@@ -363,9 +363,11 @@ input:checked ~ .menu-content {
   padding: 5% 15%;
 }
 .about .image-container {
-  height: 400px;
-  margin-left: -10%;
+  height: 34vh;
   margin-right: 5%;
+}
+.about .text-container {
+  width: 70%;
 }
 .about h2 {
   margin-top: -1%;
@@ -471,7 +473,7 @@ input:checked ~ .menu-content {
     display: flex;
   }
   .wrapper button {
-    margin-left: 20vw;
+    margin-left: 10vw;
   }
   .gallery .image-container {
     width: 300px;
@@ -756,6 +758,46 @@ footer .wrapper {
           justify-content: center;
 }
 
+@media (max-width: 900px) {
+  .contact .wrapper form {
+    margin: 0 auto;
+  }
+  .contact .wrapper .info {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .wrapper .info ul {
+    margin-left: -20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .bot-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10% auto 10% auto;
+    width: 80vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .input-email {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .input-email input {
+    text-align: center;
+    margin: auto;
+  }
+  .input-email button {
+    margin: 2.5% auto;
+    padding: 20px 30px;
+    width: 400px;
+  }
+}
 .wrapper {
   margin: 0 auto;
   padding: 0;

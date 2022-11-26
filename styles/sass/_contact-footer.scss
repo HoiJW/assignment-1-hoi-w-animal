@@ -92,3 +92,55 @@ footer{
         justify-content: center;
     }
 }
+
+
+
+@media (max-width: 900px){
+    .contact{
+        .wrapper{
+            form{
+                margin: 0 auto;
+            }
+            .info{
+                margin: 0 auto;
+                align-items: center;
+        
+                ul{
+                    margin-left: -20%;
+                    align-items: center;
+                }
+            }
+        }
+        .bot-nav{
+            display: flex;
+            margin: 10% auto 10% auto;
+            width: 80vw;
+            justify-content: space-between;
+        }
+    }
+
+    .input-email{
+        flex-wrap: wrap;
+        input{
+            text-align: center;
+            margin: auto;
+        }
+
+        button{
+            margin: 2.5% auto;
+            padding: 20px 30px;
+            width: 400px;
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+}
