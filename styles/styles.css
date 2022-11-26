@@ -230,6 +230,7 @@ header {
   background-image: url(./image-1.jpg);
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 header .wrapper {
   padding: 10px;
@@ -283,7 +284,7 @@ nav ul a {
   position: fixed;
   right: 5vw;
   top: 5vh;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Fredericka the Great", cursive;
   text-transform: uppercase;
   font-size: 1.2rem;
   text-align: end;
@@ -298,14 +299,19 @@ nav ul a {
   display: block;
   color: #FCFCFC;
   text-decoration: none;
+  padding: 15px;
 }
 
 .collapsible-menu label {
   display: block;
   cursor: pointer;
-  background: url(./bar.png) no-repeat left center;
-  background-size: 35%;
-  background-position: right;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 input#menu {
@@ -315,18 +321,21 @@ input#menu {
 .menu-content {
   max-height: 0;
   overflow: hidden;
-  font-family: "Oswald", sans-serif;
-  padding: 0 0 0 50px;
-} /* Toggle Effect */
-input:checked ~ label {
-  background-image: url(./bar.png);
 }
 
+/* Toggle Effect */
 input:checked ~ .menu-content {
   max-height: 100%;
 }
 
 @media (max-width: 900px) {
+  header {
+    background-image: url(./image-1.jpg);
+    background-size: cover;
+    background-position: left 15% bottom 45%;
+    height: 100vh;
+    background-attachment: fixed;
+  }
   .wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -385,23 +394,6 @@ input:checked ~ .menu-content {
   margin-top: 1.5%;
 }
 
-@media (max-width: 900px) {
-  .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .wrapper .image-container {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    min-width: 45vw;
-    max-height: 45vh;
-  }
-}
 .gallery {
   background-color: #C3D3CB;
   min-height: 90vh;
@@ -448,6 +440,46 @@ input:checked ~ .menu-content {
   height: 450px;
 }
 
+@media (max-width: 900px) {
+  .about {
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper h2 {
+    font-size: 2.2rem;
+  }
+  .wrapper .image-container {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 45vw;
+    max-height: 45vh;
+  }
+  .wrapper .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper button {
+    margin-left: 20vw;
+  }
+  .gallery .image-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 .mid-menu {
   height: 38vh;
   background-color: #152D20;

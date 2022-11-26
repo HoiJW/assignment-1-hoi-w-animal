@@ -3,6 +3,7 @@ header{
     background-image: url(./image-1.jpg);
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
     .wrapper{
         padding: 10px;
         display: flex;
@@ -56,30 +57,37 @@ nav ul{
     position: fixed;
     right: 5vw;
     top: 5vh;
-    font-family: $first-Font;
+    font-family: $second-Font;
     text-transform: uppercase;
     font-size: 1.2rem;
     text-align: end;
     z-index: 10;
     
     
+    
 }
 .collapsible-menu ul {
     list-style-type: none;
+    
     
 }
 .collapsible-menu a {
     display:block;
     color: $first-color;
     text-decoration: none;
+    padding: 15px;
+    
+    
+    
 }
 
 .collapsible-menu label {
     display: block;
     cursor: pointer;
-    background: url(./bar.png) no-repeat left center;
-    background-size: 35%;
-    background-position: right;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    
 }
 input#menu {
     display: none;
@@ -88,17 +96,28 @@ input#menu {
 .menu-content {
     max-height: 0;
     overflow: hidden;
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}/* Toggle Effect */input:checked ~ label {
-    background-image: url(./bar.png);
-}input:checked ~ .menu-content {
+     
+    
+}
+/* Toggle Effect */
+
+input:checked ~ .menu-content {
     max-height: 100%;
 }
 
 
+
 // responsive 
 @media (max-width: 900px) {
+    header{
+        background-image: url(./image-1.jpg);
+        background-size: cover;
+        background-position: left 15% bottom 45%;;
+        height: 100vh;
+        background-attachment: fixed
+    }
+    
+    
     .wrapper{
         flex-wrap: wrap;
         position: relative;
