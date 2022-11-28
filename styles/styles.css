@@ -356,6 +356,21 @@ input:checked ~ .menu-content {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  header {
+    background-image: url(./image-1.jpg);
+    background-size: cover;
+    background-position: left 20% bottom 45%;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  h1 {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    text-align: start;
+  }
+}
 .about {
   background-color: #152D20;
 }
@@ -444,7 +459,6 @@ input:checked ~ .menu-content {
 
 @media (max-width: 900px) {
   .about {
-    height: 120vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,14 +490,35 @@ input:checked ~ .menu-content {
     margin-left: 10vw;
   }
   .gallery .image-container {
-    width: 300px;
+    width: 250px;
     height: 300px;
     margin: 0 auto;
     padding: 10px;
   }
 }
+@media (max-width: 400px) {
+  .about .wrapper {
+    padding: 25% 5%;
+  }
+  .about .text-container {
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+  }
+  .about .text-container h2 {
+    font-size: 2rem;
+  }
+  .about .text-container P {
+    font-size: 1.1rem;
+  }
+  .about .text-container button {
+    position: absolute;
+    bottom: -10%;
+    left: 13%;
+  }
+}
 .mid-menu {
-  height: 38vh;
+  height: 100%;
   background-color: #152D20;
 }
 .mid-menu .wrapper {
@@ -505,7 +540,7 @@ input:checked ~ .menu-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2%;
+  padding: 0;
 }
 .mid-menu li {
   height: 250px;
@@ -600,7 +635,7 @@ input:checked ~ .menu-content {
 }
 .blog .blog-frame .blog-text-contanier-1 .text-layout button,
 .blog .blog-frame .blog-text-contanier-2 .text-layout button {
-  width: 10%;
+  width: 180px;
   font-family: "Cormorant Garamond", serif;
   text-align: center;
   line-height: 29px;
@@ -609,7 +644,7 @@ input:checked ~ .menu-content {
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 1.5%;
-  width: 40%;
+  width: 190px;
   background-color: #152D20;
   color: #FCFCFC;
 }
@@ -630,9 +665,6 @@ input:checked ~ .menu-content {
 }
 
 @media (max-width: 900px) {
-  .mid-menu {
-    height: 90vh;
-  }
   .mid-menu ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -649,6 +681,7 @@ input:checked ~ .menu-content {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 500px;
             flex: 1 1 500px;
+    width: 100%;
   }
   .blog-text-contanier-1,
 .blog-text-contanier-2 {
@@ -656,9 +689,31 @@ input:checked ~ .menu-content {
         -ms-flex: 1;
             flex: 1;
     padding-bottom: 20px;
+    width: 100%;
   }
   button {
     margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .blog .blog-frame .blog-text-contanier-1 .text-layout, .blog .blog-frame .blog-text-contanier-2 .text-layout {
+    width: 100%;
+    background-color: #FCFCFC;
+  }
+  .blog .blog-frame .blog-text-contanier-1 .text-layout h3, .blog .blog-frame .blog-text-contanier-2 .text-layout h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .blog .blog-frame .blog-text-contanier-1 .text-layout p, .blog .blog-frame .blog-text-contanier-2 .text-layout p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+  }
+  .blog .blog-frame .text-layout h3 {
+    font-size: 1.5rem;
+  }
+  .blog .blog-frame .text-layout p {
+    font-size: 1.1rem;
   }
 }
 .contact {
@@ -761,6 +816,7 @@ footer .wrapper {
 @media (max-width: 900px) {
   .contact .wrapper form {
     margin: 0 auto;
+    width: 100%;
   }
   .contact .wrapper .info {
     margin: 0 auto;
@@ -783,6 +839,7 @@ footer .wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0;
   }
   .input-email {
     -ms-flex-wrap: wrap;

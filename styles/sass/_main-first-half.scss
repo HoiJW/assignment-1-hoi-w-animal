@@ -95,7 +95,7 @@
 
 @media (max-width: 900px) {
     .about{
-        height: 120vh;
+        
         display: flex;
     }
     
@@ -126,7 +126,7 @@
 
         
         .image-container{
-            width: 300px;
+            width: 250px;
             height: 300px;
             margin: 0 auto;
             padding: 10px;
@@ -134,4 +134,27 @@
     }
 }
 
-    
+@media (max-width: 400px) {
+    .about{
+        
+        .wrapper{
+            padding: 25% 5%;
+        }
+            .text-container{
+                width: 100%;
+                margin-top: 10%;
+                position: relative;
+                h2{
+                    font-size: 2rem;
+                }
+                P{
+                    font-size: 1.1rem;
+                }
+                button{
+                    position: absolute;
+                    bottom: -10%;
+                    left: 13%
+                }
+            }
+    }
+}   
