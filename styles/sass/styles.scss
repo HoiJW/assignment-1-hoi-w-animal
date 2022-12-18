@@ -15,7 +15,8 @@
 }
 
 img{
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -26,5 +27,12 @@ html{
 @media (max-width: 900px) {
     .wrapper{
         flex-wrap: wrap;
+    }
+}
+
+button
+{transition: 0.3s;
+    &:hover{
+        scale: 1.1;
     }
 }

@@ -25,6 +25,11 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        transition: 0.3s;
+            &:hover{
+                scale: 1.1;
+            }
+        
     }
     a{
         color: $first-color;
@@ -35,7 +40,6 @@
         text-align: center;
     }
     .icons{
-        height: 80px;
         width: 80px;
     }
 }
@@ -46,7 +50,6 @@
 .blog {
     margin: 0;
     padding: 0;
-    min-height: 150vh;
     display: flex;
     
     
@@ -55,6 +58,7 @@
         padding: 0;
         display: flex;
         flex-wrap: wrap;
+        height: 100%;
 
 
         .blog-text-contanier-1,
@@ -70,6 +74,7 @@
                 width: 500px;
                 margin: 0 auto;
                 padding-top: 5%;
+                padding-bottom: 5%;
                 h3{
                     color: $third-color;
                     font-family: $second-Font;

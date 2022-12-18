@@ -12,10 +12,6 @@ header{
     }
     
 }
-
-
-
-
 h1{
     font-family: 'Fredericka the Great', cursive;
     font-size: 6.6rem;
@@ -38,6 +34,11 @@ nav ul{
     
     li{
         list-style: none;
+        transition: 0.3s;
+            &:hover{
+                scale: 1.1;
+            }
+        
         
     }
     a{
@@ -48,12 +49,9 @@ nav ul{
         color: $first-color;
     }
 }
-
 // mobile nav
-
-
 .collapsible-menu {
-    color: $first-color;
+    color: $third-color;
     position: fixed;
     right: 5vw;
     top: 5vh;
@@ -63,13 +61,15 @@ nav ul{
     text-align: end;
     z-index: 10;
     
-    
-    
 }
 .collapsible-menu ul {
     list-style-type: none;
-    
-    
+    li{
+        transition: 0.3s;
+        &:hover{
+            scale: 1.1;
+        }
+    }   
 }
 .collapsible-menu a {
     display:block;
@@ -80,13 +80,12 @@ nav ul{
     
     
 }
-
 .collapsible-menu label {
     display: block;
     cursor: pointer;
-    height: 30px;
-    display: flex;
-    justify-content: end;
+    width: 30%;
+    position: absolute;
+    right:15px;
     
 }
 input#menu {
@@ -151,8 +150,7 @@ input:checked ~ .menu-content {
     header{
         background-image: url(./image-1.jpg);
         background-size: cover;
-        background-position: left 20% bottom 45%;;
-        height: 100vh;
+        background-position: left 29% bottom 40%;;
         background-attachment: fixed
     }
     
